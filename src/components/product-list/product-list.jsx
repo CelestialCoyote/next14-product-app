@@ -3,7 +3,6 @@ import styles from "./product-list.module.css";
 
 
 export default function ProductList({ products }) {
-    console.log(`products: ${products}`)
 
     return (
         <ul className={styles.list}>
@@ -13,7 +12,7 @@ export default function ProductList({ products }) {
                     id={product.id}
                     name={product.name}
                     brand={product.brand}
-                    image={productd.featuredImage}
+                    image={product.featuredImage}
                 />
             )}
         </ul>
